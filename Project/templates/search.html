@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Search
+    </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        .search {
+            background-color: #B0E0E6;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search h1 {
+            font-size: 36px;
+            color: #000;
+        }
+
+        .search img {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="search">
+        <center>
+            <h1 align="center">
+                Searching from live video feed
+            </h1>
+            <img src="{{url_for('video_feed')}}">
+        </center>
+    </section>
+</body>
+
+</html>

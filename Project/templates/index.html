@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find missing person</title>
+    <style>
+        /* CSS styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #B0E0E6;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #000;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        .hero .button1 {
+            background-color: #000;
+        }
+
+        .hero .button2 {
+            background-color: #00008B;
+        }
+
+        /* About section */
+        .about {
+            background-color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .about p {
+            font-size: 20px;
+            color: #000;
+        }
+
+        /* Form section */
+        .form {
+            background-color: #B0E0E6;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .form input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .form button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <h1>Find Missing Persons, Powered by AI</h1>
+        <button onclick="scrollToAbout()">About</button>
+        <button onclick="scrollToForm()">Search</button>
+    </section>
+
+    <section class="about" id="about">
+        <p>Our AI-powered solution takes the piled-up data of missing person cases and brings clarity by swiftly
+            narrowing the search. It helps law enforcement agencies and search parties in their mission to locate and
+            bring the lost ones home.</p>
+    </section>
+
+    <section class="form" id="form">
+        <form action="/search" method="post">
+            <input type="email" placeholder="Enter email">
+            <button>Search Now</button>
+        </form>
+    </section>
+
+    <script>
+        // JavaScript functions to handle scrolling to sections
+        function scrollToAbout() {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToForm() {
+            document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
